@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rainTransform: {fileID: 2247794694587855401}
+  _rainControlSpeed: 0.25
 --- !u!1 &2247794696508945596
 GameObject:
   m_ObjectHideFlags: 0

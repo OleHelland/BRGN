@@ -7,6 +7,7 @@ public class Rain : MonoBehaviour
 {
 
     [SerializeField] Transform rainTransform;
+    [SerializeField] float _rainControlSpeed;
 
     static Rain _instance;
     public static Rain Instance { get { return _instance; } }
@@ -42,7 +43,7 @@ public class Rain : MonoBehaviour
         Debug.Log("Degrees: " + deg);
         _targetAngle = deg + 90f;
 
-        rainTransform.rotation = Quaternion.AngleAxis(_targetAngle, Vector3.forward);
+        rainTransform.rotation = Quaternion.Lerp(rainTransform.rotation, Quaternion.AngleAxis(_targetAngle, Vector3.forward), Time.deltaTime * _rainControlSpeed);
 
     }
 

@@ -26,7 +26,7 @@ public class Rain : MonoBehaviour
 
     void Update()
     {
-        float vertical = Input.GetAxis("Vectical");
+        float vertical = Input.GetAxis("Vertical");
         float horizontal = Input.GetAxis("Horizontal");
 
         rainTransform.rotation.SetLookRotation(new Vector3(vertical, horizontal));

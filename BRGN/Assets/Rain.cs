@@ -26,14 +26,16 @@ public class Rain : MonoBehaviour
 
     void Update()
     {
-        float vertical = Input.GetAxis("Vertical");
-        float horizontal = Input.GetAxis("Horizontal");
+        ////float vertical = Input.GetAxis("Vertical");
+        ////float horizontal = Input.GetAxis("Horizontal");
 
-        rainTransform.rotation.SetLookRotation(new Vector3(vertical, horizontal));
+        //rainTransform.rotation.SetLookRotation(new Vector3(vertical, horizontal));
     }
 
     public float GetAngle()
     {
-        return rainTransform.rotation.eulerAngles.z % 360;
+        float angle = (((rainTransform.rotation.eulerAngles.z + 90) % 360) + 360) % 360;
+        Debug.Log("Rain Angle: " + angle);
+        return angle;
     }
 }

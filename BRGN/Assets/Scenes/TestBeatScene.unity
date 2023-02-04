@@ -131,6 +131,38 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: StartFill
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: DrainPerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activePercentage
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activePercentage
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activeBeats.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activeBeats.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[0]
       value: 1
       objectReference: {fileID: 0}
@@ -145,6 +177,38 @@ PrefabInstance:
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activeBeats.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activeBeats.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activeBeats.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[1].activeBeats.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activeBeats.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activeBeats.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activeBeats.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[2].activeBeats.Array.data[3]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674397, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_Name
@@ -256,6 +320,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: StartFill
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: DrainPerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
       value: 8
@@ -426,6 +502,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: StartFill
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: DrainPerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -511,6 +599,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: StartFill
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: DrainPerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
       value: 8
       objectReference: {fileID: 0}
@@ -591,6 +691,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: StartFill
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: DrainPerSecond
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
       value: 8

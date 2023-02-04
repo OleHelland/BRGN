@@ -46,6 +46,9 @@ public class GlobalBeatHolder : MonoBehaviour, IBeatSender
 
     public void OnDestroy()
     {
+        foreach(IBeatFollower bf in beatFollowers) {
+            this.UnRegisterListener(bf);
+	    }
         _instance = null;
     }
 

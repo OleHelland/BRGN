@@ -52,12 +52,17 @@ public class Bucket : MonoBehaviour, IFillable, IBeatSender, IBeatFollower
 	    }
     }
 
+    private void OnValidate()
+    {
+        _currentFill = StartFill;
+    }
+
     void UpdateActiveState()
     {
         BeatOutput selectedBeatOutput = default;
         foreach(BeatOutput beatOutput in beatOutputs)
 	    {
-            if (beatOutput.activePercentage > _currentFill) {
+            if (beatOutput.activePercentage > (_currentFill/MaxFill) * 100f) {
                 continue;
 	        }
 

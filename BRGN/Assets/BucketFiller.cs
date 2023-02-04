@@ -36,7 +36,6 @@ public class BucketFiller : MonoBehaviour, IFillable
         float rainAngle = Rain.Instance.GetAngle();
         foreach (Arc arc in _inputArcs) { 
 	        if(arc.a < rainAngle && arc.b > rainAngle) {
-                Debug.Log("FillBucket: " + gameObject.name);
                 return true;
 	        }
 	    }

@@ -98,7 +98,7 @@ public class Bucket : MonoBehaviour, IFillable, IBeatSender, IBeatFollower
 
     public void OnBeat()
     {
-        if (_active && _activeBeatOutput.Equals(default(BeatOutput))) {
+        if (_active && !_activeBeatOutput.Equals(default(BeatOutput))) {
             if (_activeBeatOutput.activeBeats[beatIndex++]) {
                 SendBeat();
 	        }
@@ -108,11 +108,11 @@ public class Bucket : MonoBehaviour, IFillable, IBeatSender, IBeatFollower
 
 	public void RegisterListener(IBeatFollower follower)
 	{
-	beatFollowers.Add(follower);
+	    beatFollowers.Add(follower);
 	}
 
 	public void UnRegisterListener(IBeatFollower follower)
 	{
-	beatFollowers.Remove(follower);
+	    beatFollowers.Remove(follower);
 	}
 }

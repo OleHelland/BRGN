@@ -302,7 +302,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.15107687, g: 0.292365, b: 0.9150943, a: 0.8509804}
+      maxColor: {r: 0.15294115, g: 0.6717597, b: 0.9137255, a: 0.8509804}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3883,10 +3883,10 @@ ParticleSystem:
     primitives: []
   SubModule:
     serializedVersion: 2
-    enabled: 0
+    enabled: 1
     subEmitters:
     - serializedVersion: 3
-      emitter: {fileID: 0}
+      emitter: {fileID: 7975320520150559334}
       type: 0
       properties: 0
       emitProbability: 1
@@ -5007,9 +5007,9 @@ ParticleSystem:
     enabled: 1
     startLifetime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 0.47
-      minScalar: 5
+      minMaxState: 3
+      scalar: 0.7
+      minScalar: 0.3
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5759,8 +5759,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 10
+      scalar: 6
+      minScalar: 3
       maxCurve:
         serializedVersion: 2
         m_Curve:

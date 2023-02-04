@@ -168,11 +168,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!198 &1017431013 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7975320520150559334, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-  m_PrefabInstance: {fileID: 2247794696434644984}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1191512948
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,25 +364,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: SubModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.9137255
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.6717597
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.15294115
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: SubModule.subEmitters.Array.data[0].emitter
-      value: 
-      objectReference: {fileID: 1017431013}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}

@@ -19,7 +19,7 @@ public class BounceScale : MonoBehaviour
     IEnumerator ScaleUp() {
         float elapsedTime = 0;
         while (elapsedTime < duration/2f) {
-            transform.localScale = transform.localScale + Vector3.one * scaleFactor;
+            transform.localScale = transform.localScale + Vector3.one * scaleFactor * Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null;
         }
@@ -29,7 +29,7 @@ public class BounceScale : MonoBehaviour
     IEnumerator ScaleDown() {
         float elapsedTime = 0;
         while (elapsedTime < duration/2f) {
-            transform.localScale = transform.localScale - Vector3.one * scaleFactor;
+            transform.localScale = transform.localScale - Vector3.one * scaleFactor * Time.deltaTime;
             elapsedTime += Time.deltaTime;
             yield return null;
         }

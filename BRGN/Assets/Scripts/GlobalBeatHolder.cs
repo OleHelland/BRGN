@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class GlobalBeatHolder : MonoBehaviour, IBeatSender
 {
 
@@ -35,6 +36,17 @@ public class GlobalBeatHolder : MonoBehaviour, IBeatSender
             _secondsSinceBeat -= _secondsPerBeat;
             SendBeat();
     	}
+    }
+
+    private void OnValidate()
+    {
+        float beatsPerSecond = bpm / 60;
+        _secondsPerBeat = 1/beatsPerSecond;
+    }
+
+    public void OnDestroy()
+    {
+        _instance = null;
     }
 
 

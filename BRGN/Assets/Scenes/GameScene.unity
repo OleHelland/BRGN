@@ -307,6 +307,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5017520724909467412, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: fillPerSecond
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
 --- !u!1001 &2247794696434644984
@@ -363,18 +367,6 @@ PrefabInstance:
     - target: {fileID: 2247794695680435915, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794695680435916, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: _angleLerpFactor
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794695680435916, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: _perlinAmplitude
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2247794695680435916, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
-      propertyPath: _perlinFrequency
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}

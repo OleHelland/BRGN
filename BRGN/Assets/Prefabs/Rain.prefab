@@ -79,6 +79,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rainTransform: {fileID: 2247794694587855401}
   _rainControlSpeed: 0.25
+  _angleLerpFactor: 0.00008
+  _perlinFrequency: 0.5
+  _perlinMaxFrequency: 5
+  _perlinAmplitude: 15
 --- !u!1 &2247794696508945596
 GameObject:
   m_ObjectHideFlags: 0
@@ -3890,7 +3894,7 @@ ParticleSystem:
       emitter: {fileID: 7975320520150559334}
       type: 0
       properties: 0
-      emitProbability: 1
+      emitProbability: 0.48
   LightsModule:
     enabled: 0
     ratio: 0
@@ -6966,7 +6970,7 @@ ParticleSystem:
     inWorldSpace: 0
   InheritVelocityModule:
     enabled: 1
-    m_Mode: 1
+    m_Mode: 0
     m_Curve:
       serializedVersion: 2
       minMaxState: 0

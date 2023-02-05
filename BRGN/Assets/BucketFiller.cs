@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BucketFiller : MonoBehaviour, IFillable
+public class BucketFiller : MonoBehaviour, IFillable, ICommunicateActiveState
 {
     [Serializable]
     public struct Arc {
@@ -14,6 +14,7 @@ public class BucketFiller : MonoBehaviour, IFillable
     Bucket fillable;
     [SerializeField] float fillPerSecond;
     [SerializeField] List<Arc> _inputArcs;
+    bool _active;
 
     private void Awake()
     {
@@ -21,26 +22,29 @@ public class BucketFiller : MonoBehaviour, IFillable
     }
 
     void Update() {
+        CheckIfFillerIsActive();
         Fill(fillPerSecond * Time.deltaTime);
     }
 
     public void Fill(float amount)
     {
-        if (RainAngleIsInActivationArea()) { 
+        if (_active) { 
 		    fillable.Fill(amount);
 		}
     }
 
-    bool RainAngleIsInActivationArea()
+    bool CheckIfFillerIsActive()
     {
         if (Rain.Instance) { 
 			float rainAngle = Rain.Instance.GetAngle();
 			foreach (Arc arc in _inputArcs) { 
 				if(arc.a < rainAngle && arc.b > rainAngle) {
+                    _active = true; ;
 					return true;
 				}
 		    }
     	}
+        _active = false;
         return false;
     }
 
@@ -60,5 +64,10 @@ public class BucketFiller : MonoBehaviour, IFillable
             colorIndex++;
             colorIndex %= colors.Length;
     	}
+    }
+
+    public bool IsActive()
+    {
+        return _active;
     }
 }

@@ -98,9 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fillPerSecond: 0
   _inputArcs:
-  - a: 0
-    b: 30
-  - a: 50
+  - a: 85
     b: 95
 --- !u!1 &4306424229886851619
 GameObject:

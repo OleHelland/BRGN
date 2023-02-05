@@ -14,7 +14,10 @@ public class RainInput : MonoBehaviour
     }
 
     void Update()
-    {
+    {if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
         _vertical = Input.GetAxisRaw("Vertical");
         _horizontal = Input.GetAxisRaw("Horizontal");
 

@@ -155,6 +155,10 @@ PrefabInstance:
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[1].activeBeats.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -168,15 +172,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[1]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[2]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[1].activeBeats.Array.data[0]
@@ -266,6 +270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 68a88db61b38846a9a50f2128f4c5271, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
 --- !u!1 &552122361
@@ -297,7 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd416e50b94349a7959b37294ede50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 90
+  bpm: 140
 --- !u!4 &552122363
 Transform:
   m_ObjectHideFlags: 0
@@ -334,23 +342,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
-      value: 8
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[4]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[5]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[6]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[7]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674397, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_Name
@@ -408,6 +432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4261716291221487db189d44443ed5b5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
 --- !u!1 &1191512948
@@ -515,11 +543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
-      value: 8
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[0]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[1]
@@ -527,11 +555,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[2]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[5]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674397, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_Name
@@ -589,6 +625,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 996eef98f137f45d2ae1fc329c0ab14b, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
 --- !u!1001 &1392989618
@@ -612,19 +652,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[1]
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[2]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[5]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[6]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[7]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[15]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674397, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_Name
@@ -682,6 +738,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
 --- !u!1001 &1776058144
@@ -705,15 +765,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.size
-      value: 8
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[0]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[1]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[2]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[3]
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[4]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[5]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[6]
@@ -721,7 +797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674396, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: beatOutputs.Array.data[0].activeBeats.Array.data[7]
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1322828317912674397, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_Name
@@ -778,6 +854,14 @@ PrefabInstance:
     - target: {fileID: 1322828317912674399, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdb9a4d485ff34e42a870ce5e8130b6b, type: 3}
+    - target: {fileID: 6859972467764563664, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}
+      propertyPath: reverbZoneMixCustomCurve.m_Curve.Array.data[0].value
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695879339bd4d4f548c895ef94a82a9a, type: 3}

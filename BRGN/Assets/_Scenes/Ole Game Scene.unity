@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd416e50b94349a7959b37294ede50a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 90
+  bpm: 300
 --- !u!4 &552122363
 Transform:
   m_ObjectHideFlags: 0

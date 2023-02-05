@@ -13,7 +13,6 @@ public class Rain : MonoBehaviour
     [SerializeField] float _perlinMaxFrequency;
     [SerializeField] float _perlinAmplitude;
 
-
     static Rain _instance;
     public static Rain Instance { get { return _instance; } }
 

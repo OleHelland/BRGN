@@ -80,10 +80,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rainTransform: {fileID: 2247794694587855401}
   _rainControlSpeed: 0.25
-  _angleLerpFactor: 0.03
+  _angleLerpFactor: 0.005
   _perlinFrequency: 0.5
   _perlinMaxFrequency: 5
   _perlinAmplitude: 15
+  MaxRainRotation: 0
 --- !u!114 &1048977714
 MonoBehaviour:
   m_ObjectHideFlags: 0

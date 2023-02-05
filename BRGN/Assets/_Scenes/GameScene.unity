@@ -259,6 +259,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2044190264986861523, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114355130847862073, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.19
+      objectReference: {fileID: 0}
     - target: {fileID: 2114355131147629966, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
       propertyPath: m_Name
       value: TestLevel
@@ -306,6 +314,34 @@ PrefabInstance:
     - target: {fileID: 2114355131147629967, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4380257532812708580, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: beatOutputs.Array.data[0].activePercentage
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470490971862607509, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: m_Parameters.m_GravityCurve.scalar
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4470490971862607509, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: m_Parameters.m_DirectionCurveX.scalar
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724725455683018156, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: _inputArcs.Array.data[0].a
+      value: 8.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724725455683018156, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: _inputArcs.Array.data[0].b
+      value: 50.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724725455683018156, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: _inputArcs.Array.data[1].a
+      value: 133.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724725455683018156, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
+      propertyPath: _inputArcs.Array.data[1].b
+      value: 171.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
@@ -363,6 +399,22 @@ PrefabInstance:
     - target: {fileID: 2247794695680435915, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
+      propertyPath: simulationSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2247794696508945599, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: -11.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975320520150559334, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7975320520150559334, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.39
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71da5e72237d94f059ec32e44ff98079, type: 3}

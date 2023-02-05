@@ -13,11 +13,12 @@ public class Rain : MonoBehaviour
     [SerializeField] float _perlinMaxFrequency;
     [SerializeField] float _perlinAmplitude;
 
-
     static Rain _instance;
     public static Rain Instance { get { return _instance; } }
 
     float _targetAngle;
+
+    RainInput _rainInput;
 
     private void Awake()
     {
@@ -28,6 +29,8 @@ public class Rain : MonoBehaviour
 	    }
 
         _targetAngle = rainTransform.rotation.eulerAngles.z;
+
+        _rainInput = GetComponent<RainInput>();
     }
 
     private void OnDestroy()
@@ -37,15 +40,22 @@ public class Rain : MonoBehaviour
 
     void Update()
     {
-        float vertical = Input.GetAxisRaw("Vertical");
-        float horizontal = Input.GetAxisRaw("Horizontal");
+        if (_rainInput == null) {
+        }
+
+        float vertical = 0f;
+        float horizontal = 0f;
+
+        if (_rainInput.HasValues()) {
+            vertical = _rainInput.GetVertical();
+            horizontal = _rainInput.GetHorizontal();
+		}
 
         float rad = Mathf.Atan2(vertical, horizontal);
         float deg = ((rad * 180f) / Mathf.PI);
         if(deg < 360f) {
             deg = 360f - deg;
 	    }
-        Debug.Log("Degrees: " + deg);
         _targetAngle = Mathf.LerpAngle(_targetAngle, deg + 90f, _angleLerpFactor);
 
         float windFrequency = Mathf.PerlinNoise(Time.time * _perlinFrequency, 1.0f) * _perlinMaxFrequency;

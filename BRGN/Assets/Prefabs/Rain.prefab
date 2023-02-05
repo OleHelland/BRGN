@@ -84,7 +84,6 @@ MonoBehaviour:
   _perlinFrequency: 0.5
   _perlinMaxFrequency: 5
   _perlinAmplitude: 15
-  MaxRainRotation: 0
 --- !u!114 &1048977714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,7 +320,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.15294115, g: 0.6717597, b: 0.9137255, a: 0.8509804}
+      maxColor: {r: 0.15294118, g: 0.4392157, b: 0.44313726, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5134,7 +5133,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.371262, g: 0.9232739, b: 0.9716981, a: 1}
+      maxColor: {r: 0.15294118, g: 0.4392157, b: 0.44313726, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

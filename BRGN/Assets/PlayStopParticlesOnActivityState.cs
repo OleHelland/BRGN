@@ -5,13 +5,14 @@ using UnityEngine;
 public class PlayStopParticlesOnActivityState : MonoBehaviour, IActiveStateListener
 {
     [SerializeField] ParticleSystem _target;
-    [SerializeField] ICommunicateActiveState _activityCommunicator;
+    [SerializeField] GameObject _activityCommunicatorObject;
+    ICommunicateActiveState _activityCommunicator;
     [SerializeField] bool inverse;
 
     bool _lastState = false;
 
     void OnEnable() {
-        _activityCommunicator = GetComponentInParent<ICommunicateActiveState>();
+        _activityCommunicator = _activityCommunicatorObject.GetComponent<ICommunicateActiveState>();
         UpdateActive();
     }
 

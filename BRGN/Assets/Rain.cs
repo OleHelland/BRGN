@@ -8,6 +8,10 @@ public class Rain : MonoBehaviour
 
     [SerializeField] Transform rainTransform;
     [SerializeField] float _rainControlSpeed;
+    [SerializeField] float _angleLerpFactor;
+    [SerializeField] float _perlinFrequency;
+    [SerializeField] float _perlinAmplitude;
+
 
     static Rain _instance;
     public static Rain Instance { get { return _instance; } }
@@ -41,9 +45,11 @@ public class Rain : MonoBehaviour
             deg = 360f - deg;
 	    }
         Debug.Log("Degrees: " + deg);
-        _targetAngle = deg + 90f;
+        _targetAngle = Mathf.LerpAngle(_targetAngle, deg + 90f, _angleLerpFactor);
 
-        rainTransform.rotation = Quaternion.Lerp(rainTransform.rotation, Quaternion.AngleAxis(_targetAngle, Vector3.forward), Time.deltaTime * _rainControlSpeed);
+        float _perlinRotationAngle = (Mathf.PerlinNoise(Time.time * _perlinFrequency, 0.0f)*2-1) * _perlinAmplitude;
+
+        rainTransform.rotation = Quaternion.AngleAxis(_targetAngle, Vector3.forward) * Quaternion.AngleAxis(_perlinRotationAngle, Vector3.forward);
 
     }
 

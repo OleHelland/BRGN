@@ -259,18 +259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1082309969, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
-      propertyPath: m_Color.b
-      value: 0.26666668
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082309969, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
-      propertyPath: m_Color.g
-      value: 0.28235295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1082309969, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
-      propertyPath: m_Color.r
-      value: 0.12156863
-      objectReference: {fileID: 0}
     - target: {fileID: 2114355131147629966, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
       propertyPath: m_Name
       value: TestLevel
@@ -317,14 +305,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2114355131147629967, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5132234932674163240, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 8550578757677541462, guid: 9d862fb7d00214b1f8dc16a593488b25, type: 3}
-      propertyPath: m_DrawMode
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -33,12 +33,14 @@ public class BucketFiller : MonoBehaviour, IFillable
 
     bool RainAngleIsInActivationArea()
     {
-        float rainAngle = Rain.Instance.GetAngle();
-        foreach (Arc arc in _inputArcs) { 
-	        if(arc.a < rainAngle && arc.b > rainAngle) {
-                return true;
-	        }
-	    }
+        if (Rain.Instance) { 
+			float rainAngle = Rain.Instance.GetAngle();
+			foreach (Arc arc in _inputArcs) { 
+				if(arc.a < rainAngle && arc.b > rainAngle) {
+					return true;
+				}
+		    }
+    	}
         return false;
     }
 
